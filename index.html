@@ -1,20 +1,28 @@
 <html>
     <head>
         <meta charset="UTF-8">
-<!--    <meta name="viewport" content= "width=device-width, initial-scale=1.0">   -->
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">   
         <title>Bootstrap Framework</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="\node_modules\bootstrap\dist\css\bootstrap.css">
+        <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+        
     </head>
 <body>
+    <div class="container">
     <header id="header" class="row">
-        <div id="header--brand"  class="brand col-4">RAKUTEN FRESH</div>
-        <nav id="header--nav" class="col-4 navbar-nav">
-            <a href="#" class="nav-item nav-link active">Find</a>
-            <a href="#" class="nav-item nav-link">About Us</a>
-            <a href="#" class="nav-item nav-link">How It Works</a>
-            <a href="#" class="nav-item nav-link">Plans</a>
-            <a href="#" class="nav-item nav-link">Contact Us</a>
+        <div id="header--brand"  class="brand col-3">RAKUTEN FRESH</div>
+        <nav id="header--nav" class="col-7">
+            <ol class="nav d-flex justify-content-end">
+                <li class="nav-item mr-auto"><a href="#" class="nav-link active">Find</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Plans</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+            </ol>
         </nav>
+        <div id="header--user-pic" class="col-1"><img src="\images\Image 39.png" class="float-right"></div>
+        <div id="header--cart-btn" class="col-1"></div>
     </header>
     <section id="section-top__quote-container">
         <span id="section-top__quote-container--quote">"People who loves to eat are always the Best People</span>
@@ -34,6 +42,6 @@
     <section id="section-main">
 
     </section>
-
+</div>
 </body>
 </html>
