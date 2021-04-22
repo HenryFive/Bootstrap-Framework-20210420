@@ -4,44 +4,49 @@
         <meta name="viewport" content= "width=device-width, initial-scale=1.0">   
         <title>Bootstrap Framework</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="\node_modules\bootstrap\dist\css\bootstrap.css">
         <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         
     </head>
 <body>
-    <div class="container">
-    <header id="header" class="row">
-        <div id="header--brand"  class="brand col-3">RAKUTEN FRESH</div>
-        <nav id="header--nav" class="col-7">
-            <ol class="nav d-flex justify-content-end">
-                <li class="nav-item mr-auto"><a href="#" class="nav-link active">Find</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">How It Works</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Plans</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-            </ol>
-        </nav>
-        <div id="header--user-pic" class="col-1"><img src="\images\Image 39.png" class="float-right"></div>
-        <div id="header--cart-btn" class="col-1"></div>
-    </header>
-    <section id="section-top__quote-container">
-        <span id="section-top__quote-container--quote">"People who loves to eat are always the Best People</span>
-        <span id="section-top__quote-container--author">JULIA CHILD</span>
-        <span id="section-top__quote-container--last-quotation">"</span>
-    </section>
-    <section id="section-top__main">
-        <span id="section-top__main--text-1">Find Health And</span>
-        <span id="section-top__main--text-1">Favourite Fooods</span>
-        <span id="section-top__main--text-1">Near You</span>
-        <input id="section-top__main--app-store-btn">
-        <input id="section-top__main--google-play-btn">
-    </section>
-    <section id="section-main__category">
+    <div id="container" class="container">
+        <header id="header" class="row mt-5">
+            <div id="header--brand"  class="brand col-3">RAKUTEN FRESH</div>
+            <nav id="header--nav" class="col-7">
+                <ol class="nav d-flex justify-content-end">
+                    <li class="nav-item mr-auto"><a href="#" class="nav-link active">Find</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">How It Works</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Plans</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                </ol>
+            </nav>
+            <div id="header--user-pic" class="col-1 ps-5"><img src="\images\Image 39.png" class="rounded-circle"></div>
+            <div id="header__cart-btn-container" class="col-1"><button type="button" id="header--cart-btn" class="rounded-pill align-bottom">(5) Items</button></div>
+        </header>
+        <section id="section-top__quote-container" class="d-flex justify-content-center mt-3">
+            <span id="section-top__quote-container--first-quotation">"&nbsp;</span>
+            <span id="section-top__quote-container--quote">People who loves to eat are always the Best People</span>
+            <div id="section-top__quote-container--author">JULIA CHILD</div>
+            <span id="section-top__quote-container--last-quotation">&nbsp;"</span>
+        </section>
+        <section id="section-top__main" class="rounded">
+            <span id="section-top__main--text-1">Find Health And</span>
+            <span id="section-top__main--text-1">Favourite Fooods</span>
+            <span id="section-top__main--text-1">Near You</span>
+            <input type="button" id="section-top__main--app-store-btn">
+            <input type="button" id="section-top__main--google-play-btn">
+        </section>
+        <section id="section-main__category">
 
-    </section>
-    <section id="section-main">
+        </section>
+        <section id="section-main">
 
-    </section>
-</div>
+        </section>
+    </div>
 </body>
 </html>

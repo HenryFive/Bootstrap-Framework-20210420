@@ -1,4 +1,69 @@
+$primary:#EF4C00;
+$secondary:#B30733;
+$tertiary:#2E4765;
+
 * {
     font-family: Roboto;
-    border:1px solid;
+    color: $tertiary;
+    //border:1px solid;
+}
+#container{
+    width: 70vw;
+}
+#header--brand{
+    border-bottom: solid 1px #2E4765;
+}
+#header--nav{
+
+    margin: 0px;
+    padding: 0;
+    
+
+    ol{
+        list-style-type: none;
+        height: 50px;
+        border-bottom: solid 1px $tertiary;
+    }
+    a{
+        color: $tertiary;
+    }
+}
+#header--user-pic{
+    border-bottom: solid 1px $tertiary;
+    border-right: solid 1px $tertiary;
+}
+#header__cart-btn-container{
+    border-bottom: solid 1px #2E4765;
+
+    #header--cart-btn{
+        height: 40px;
+        background-color: $primary;
+        border: 0;
+        color:white;
+    }
+}
+
+#section-top__quote-container{
+
+    &--first-quotation{
+        font-size:3em;
+    }
+    &--quote{
+        padding-top: 7px;
+        font-size:1.9em;
+    }
+    &--author{
+        padding-top: 70px;
+        color:$primary;
+        font-weight: bold;
+    }
+    &--last-quotation{
+        font-size:3em;
+        padding-top: 40px;
+    }
+}
+#section-top__main{
+    background-image: url("images/10882@2x.png");
+    height:200px;
+    background-repeat: no-repeat;
 }

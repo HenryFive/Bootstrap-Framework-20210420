@@ -1,5 +1,70 @@
 * {
   font-family: Roboto;
-  border: 1px solid;
+  color: #2E4765;
+}
+
+#container {
+  width: 70vw;
+}
+
+#header--brand {
+  border-bottom: solid 1px #2E4765;
+}
+
+#header--nav {
+  margin: 0px;
+  padding: 0;
+}
+
+#header--nav ol {
+  list-style-type: none;
+  height: 50px;
+  border-bottom: solid 1px #2E4765;
+}
+
+#header--nav a {
+  color: #2E4765;
+}
+
+#header--user-pic {
+  border-bottom: solid 1px #2E4765;
+  border-right: solid 1px #2E4765;
+}
+
+#header__cart-btn-container {
+  border-bottom: solid 1px #2E4765;
+}
+
+#header__cart-btn-container #header--cart-btn {
+  height: 40px;
+  background-color: #EF4C00;
+  border: 0;
+  color: white;
+}
+
+#section-top__quote-container--first-quotation {
+  font-size: 3em;
+}
+
+#section-top__quote-container--quote {
+  padding-top: 7px;
+  font-size: 1.9em;
+}
+
+#section-top__quote-container--author {
+  padding-top: 70px;
+  color: #EF4C00;
+  font-weight: bold;
+}
+
+#section-top__quote-container--last-quotation {
+  font-size: 3em;
+  padding-top: 40px;
+}
+
+#section-top__main {
+  background-image: url("images/10882@2x.png");
+  height: 200px;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
