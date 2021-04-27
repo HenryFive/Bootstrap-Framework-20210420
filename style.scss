@@ -4,6 +4,7 @@ $tertiary:#2E4765;
 
 * {
     font-family: Roboto;
+    font-size: 0.97em;
     color: $tertiary;
     //border:1px solid;
 }
@@ -11,7 +12,11 @@ $tertiary:#2E4765;
     width: 70vw;
 }
 #header--brand{
-    border-bottom: solid 1px #2E4765;
+    border-bottom: solid 1px $tertiary;
+    color: $primary;
+    font-size: 1.5em;
+    padding-top: 8px;
+    padding-left: 0;
 }
 #header--nav{
 
@@ -23,20 +28,28 @@ $tertiary:#2E4765;
         list-style-type: none;
         height: 50px;
         border-bottom: solid 1px $tertiary;
+        padding-top: 6px;
     }
     a{
         color: $tertiary;
     }
 }
-#header--user-pic{
+#header__user-pic-container{
     border-bottom: solid 1px $tertiary;
     border-right: solid 1px $tertiary;
+    padding-top: 6px;
+    &--user-pic{
+        width: 30px;
+    }
 }
+
+
 #header__cart-btn-container{
     border-bottom: solid 1px #2E4765;
 
     #header--cart-btn{
         height: 40px;
+        width: 100px;
         background-color: $primary;
         border: 0;
         color:white;
@@ -64,6 +77,35 @@ $tertiary:#2E4765;
 }
 #section-top__main{
     background-image: url("images/10882@2x.png");
-    height:200px;
+    height: 375px;
+    background-size: cover;            
     background-repeat: no-repeat;
+    background-position: center center; 
+    font-size: 2em;
+    line-height: 1.5em;
+    padding: 130px 0px 0px 50px;
+    border-radius:20px;
+    div {
+        color: #fff;
+    }
+
+    .section-top__main--app-btn{
+        margin-top: 1em;
+        
+        width:150px;
+        height:40px;
+        background-size:contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+
+    #section-top__main--app-store-btn{
+        background-image: url(images/btn-app-store.png);
+        background-color: $secondary;
+    }
+    #section-top__main--google-play-btn{
+        background-image: url(images/btn-google-play.png);
+        background-color: #e41649;
+    }
 }

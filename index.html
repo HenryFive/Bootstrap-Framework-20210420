@@ -16,7 +16,7 @@
     <div id="container" class="container">
         <header id="header" class="row mt-5">
             <div id="header--brand"  class="brand col-3">RAKUTEN FRESH</div>
-            <nav id="header--nav" class="col-7">
+            <nav id="header--nav" class="col-6">
                 <ol class="nav d-flex justify-content-end">
                     <li class="nav-item mr-auto"><a href="#" class="nav-link active">Find</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
@@ -25,8 +25,8 @@
                     <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
                 </ol>
             </nav>
-            <div id="header--user-pic" class="col-1 ps-5"><img src="\images\Image 39.png" class="rounded-circle"></div>
-            <div id="header__cart-btn-container" class="col-1"><button type="button" id="header--cart-btn" class="rounded-pill align-bottom">(5) Items</button></div>
+            <div id="header__user-pic-container" class="col-1"><img src="\images\Image 39.png" id="header__user-pic-container--user-pic" class="rounded-circle float-end"></div>
+            <div id="header__cart-btn-container" class="col-2"><button type="button" id="header--cart-btn" class="rounded-pill align-bottom">(5) Items</button></div>
         </header>
         <section id="section-top__quote-container" class="d-flex justify-content-center mt-3">
             <span id="section-top__quote-container--first-quotation">"&nbsp;</span>
@@ -34,12 +34,14 @@
             <div id="section-top__quote-container--author">JULIA CHILD</div>
             <span id="section-top__quote-container--last-quotation">&nbsp;"</span>
         </section>
-        <section id="section-top__main" class="rounded">
-            <span id="section-top__main--text-1">Find Health And</span>
-            <span id="section-top__main--text-1">Favourite Fooods</span>
-            <span id="section-top__main--text-1">Near You</span>
-            <input type="button" id="section-top__main--app-store-btn">
-            <input type="button" id="section-top__main--google-play-btn">
+        <section id="section-top__main">
+            <div class="section-top__main--text">Find Health And</div>
+            <div class="section-top__main--text">Favourite Fooods</div>
+            <div class="section-top__main--text">Near You</div>
+            <div id="section-top__main--app-btns-container" class="d-inline-flex">
+                <div id="section-top__main--app-store-btn" class="section-top__main--app-btn rounded me-3"></div>
+                <div id="section-top__main--google-play-btn" class="section-top__main--app-btn rounded"></div>
+            </div>
         </section>
         <section id="section-main__category">
 
