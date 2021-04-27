@@ -1,6 +1,7 @@
 $primary:#EF4C00;
 $secondary:#B30733;
 $tertiary:#2E4765;
+$tertiary-light:#b7ceeb;
 
 * {
     font-family: Roboto;
@@ -107,5 +108,40 @@ $tertiary:#2E4765;
     #section-top__main--google-play-btn{
         background-image: url(images/btn-google-play.png);
         background-color: #e41649;
+    }
+}
+#section-main__category-container{
+    &--category-label{
+        padding-top: 20px;
+        font-size: 1.2em;
+        color: $secondary;
+        font-weight: bold;
+    }
+
+    &__search-container{
+        form{
+            background-color: $tertiary-light; 
+        }
+        &--search-field{
+            margin: 11px 0px 9px 15px;
+            border: 0;
+            background-color: transparent;
+        }
+        &--search-btn{
+            margin: 10px 15px 10px 10px;
+            color: $secondary;
+        }
+    }
+    &--search-settings{
+        background-color: $primary;
+        margin-left: 10px;
+        width:40px;
+        height: 40px;
+        
+        i{
+            font-size: 1.5em;
+            padding: 10px;
+            color: white;
+        }
     }
 }
