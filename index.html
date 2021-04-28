@@ -15,50 +15,117 @@
 <body>
     <div id="container" class="container">
         <header id="header" class="row">
-            <div id="header--brand"  class="brand col-3 pt-5">RAKUTEN FRESH</div>
-            <nav id="header--nav" class="col-6 pt-5">
-                <ol class="nav d-flex justify-content-end">
-                    <li class="nav-item mr-auto"><a href="#" class="nav-link active">Find</a></li>
+            <div id="header--brand"  class="brand col-md-auto col-lg-3 pt-4">RAKUTEN FRESH</div>
+            <nav id="header--nav" class="col-lg-6 col-md-12 pt-4">
+                <ol class="nav d-flex justify-content-lg-end justify-content-md-center">
+                    <li class="nav-item mr-auto"><a href="#" class="nav-link header--nav--active">Find</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">How It Works</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Plans</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
                 </ol>
             </nav>
-            <div id="header__user-pic-container" class="col-1 pt-5"><img src="\images\Image 39.png" id="header__user-pic-container--user-pic" class="rounded-circle float-end"></div>
-            <div id="header__cart-btn-container" class="col-2 pt-5"><button type="button" id="header--cart-btn" class="rounded-pill align-bottom">(5) Items</button></div>
+            <div id="header__user-pic-container" class="col-1 pt-4"><img src="\images\Image 39.png" id="header__user-pic-container--user-pic" class="rounded-circle float-end"></div>
+            <div id="header__cart-btn-container" class="col-2 pt-4"><button type="button" id="header--cart-btn" class="rounded-pill align-bottom float-end"><i class="fas fa-shopping-basket" id="header--cart-btn--icon"></i> (5) Items</button></div>
         </header>
         <section id="section-top__quote-container" class="d-flex justify-content-center mt-3">
             <span id="section-top__quote-container--first-quotation">"&nbsp;</span>
-            <span id="section-top__quote-container--quote">People who loves to eat are always the Best People</span>
-            <div id="section-top__quote-container--author">JULIA CHILD</div>
-            <span id="section-top__quote-container--last-quotation">&nbsp;"</span>
+            <div id="section-top__quote-container--quote">People who loves to eat are always the Best People</div>
+            <div id="section-top__quote-container--author" class="">JULIA CHILD</div>
+            <div id="section-top__quote-container--last-quotation">&nbsp;"</div>
         </section>
         <section id="section-top__main" class="mb-3">
             <div class="section-top__main--text">Find Health And</div>
             <div class="section-top__main--text">Favourite Foods</div>
             <div class="section-top__main--text">Near You</div>
-            <div id="section-top__main--app-btns-container" class="d-inline-flex">
-                <div id="section-top__main--app-store-btn" class="section-top__main--app-btn rounded me-3"></div>
-                <div id="section-top__main--google-play-btn" class="section-top__main--app-btn rounded"></div>
-            </div>
-        </section>
-        <section id="section-main__category-container" class="row">
-            <div id="section-main__category-container--category-label"class="col-7">OUR MEALS</div>
-            <div class="col-5">
-                <div id="section-main__category-container__search-container">
-                    <form class="rounded-pill float-start">
-                      <input type="text" placeholder="Search by name" name="search" id="section-main__category-container__search-container--search-field">
-                      <i class="fa fa-search" id="section-main__category-container__search-container--search-btn"></i>
-                    </form>
-                </div>
-                <div id="section-main__category-container--search-settings" class="rounded-circle float-start">
-                    <i class="fa fa-sliders-h"></i>
-                </div>
+            <div id="section-top__main--app-btns-container" class="mt-4 pb-3 d-inline-flex flex-wrap">
+                <div id="section-top__main--app-store-btn" class="section-top__main--app-btn rounded me-3 mb-4"></div>
+                <div id="section-top__main--google-play-btn" class="section-top__main--app-btn rounded me-5 mb-4"></div>
             </div>
         </section>
         <section id="section-main">
+            <header id="section-main__header-container" class="row">
+                <div id="section-main__header-container--our-meal-label"class="col-md-3 me-auto">OUR MEALS</div>
+                <div class="col-md-auto">
+                    <div id="section-main__header-container__search-container">
+                        <form class="float-end">
+                            <div id="section-main__header-container__search-container--search-bar" class="rounded-pill float-start">
+                                <input type="text" placeholder="Search by name" name="search" id="section-main__header-container__search-container--search-field">
+                                <i class="fa fa-search" id="section-main__header-container__search-container--search-btn"></i>
+                            </div>
+                            <button id="section-main__header-container--search-settings" class="rounded-circle">
+                                <i class="fa fa-sliders-h"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </header>
+            <nav id="section-main__categories" class="d-flex flex-wrap">
+                <button type="button" id="section-main__categories--all-btn" class="rounded-pill">All (170)</button>
+                <div id="section-main__categories--breakfast" class="section-main__categoryies--nav-item rounded-pill"><img src="images/pancakes.svg" alt="pancake"><span>Break Fast(23)</span></div>
+                <div id="section-main__categories--lunch" class="section-main__categoryies--nav-item rounded-pill"><img src="images/restaurant.svg" alt="utensils"><span>Lunch(41)</span></div>
+                <div id="section-main__categories--drinks" class="section-main__categoryies--nav-item rounded-pill"><img src="images/coffee.svg" alt="coffee"><span>Drinks(53)</span></div>
+                <div id="section-main__categories--desserts" class="section-main__categoryies--nav-item rounded-pill"><img src="images/cupcake.svg" alt="cupcake"><span>Desserts(33)</span></div>
+                <div id="section-main__categories--Fastfood(20)" class="section-main__categoryies--nav-item rounded-pill"><img src="images/hamburger.svg" alt="hamburger"><span>Fastfood(23)</span></div>
+            </nav>
 
+        </section>
+        <section id="card-section__container" class="d-inline-flex flex-wrap">
+            <div class="card meal-item">
+                <div class="card-body">
+                    <img src="images/Image 33@2x.png" class="card-img-top" alt="">
+                    <h6 class="card-title px-2">Pakistani Chicken Platter</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card meal-item">
+                <div class="card-body">
+                    <img src="images/Image 34@2x.png" class="card-img-top" alt="">
+                    <h5 class="card-title">Risotto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card meal-item">
+                <div class="card-body">
+                    <img src="images/Image 35@2x.png" class="card-img-top" alt="">
+                    <div>Maslenitca</div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card meal-item">
+                <div class="card-body">
+                    <img src="images/Image 36@2x.png" class="card-img-top" alt="">
+                    <h5 class="card-title">Moussaka</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card meal-item">
+                <div class="card-body">
+                    <img src="images/Image 37@2x.png" class="card-img-top" alt="">
+                    <h5 class="card-title">Capachino</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card meal-item">
+                <div class="card-body">
+                    <img src="images/Image 38@2x.png" class="card-img-top" alt="">
+                    <h5 class="card-title">Arabic Mandi</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
         </section>
     </div>
 </body>

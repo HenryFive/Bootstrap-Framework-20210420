@@ -9,10 +9,11 @@
 }
 
 #header--brand {
-  border-bottom: solid 1px #2E4765;
+  border-bottom: solid 1px #dfdfdf;
   color: #EF4C00;
   font-size: 1.5em;
-  padding-top: 8px;
+  line-height: 2em;
+  padding-bottom: 0px;
   padding-left: 0;
 }
 
@@ -24,8 +25,23 @@
 #header--nav ol {
   list-style-type: none;
   height: 50px;
-  border-bottom: solid 1px #2E4765;
+  border-bottom: solid 1px #dfdfdf;
   padding-top: 6px;
+}
+
+#header--nav li .active {
+  padding-bottom: 14px;
+  border-bottom: solid 6px #EF4C00;
+}
+
+#header--nav li .active:before {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  content: '';
+  width: 300px;
+  border: 3px solid;
+  border-color: #EF4C00;
 }
 
 #header--nav a {
@@ -33,25 +49,32 @@
 }
 
 #header__user-pic-container {
-  border-bottom: solid 1px #2E4765;
-  border-right: solid 1px #2E4765;
+  border-bottom: solid 1px #dfdfdf;
+  border-right: solid 1px #dfdfdf;
   padding-top: 6px;
 }
 
 #header__user-pic-container--user-pic {
-  width: 30px;
+  width: 34px;
 }
 
 #header__cart-btn-container {
-  border-bottom: solid 1px #2E4765;
+  border-bottom: solid 1px #dfdfdf;
 }
 
 #header__cart-btn-container #header--cart-btn {
-  height: 40px;
-  width: 100px;
+  height: 34px;
+  width: 110px;
   background-color: #EF4C00;
   border: 0;
   color: white;
+}
+
+#header__cart-btn-container #header--cart-btn--icon {
+  font-size: 1.3em;
+  color: #fff;
+  position: relative;
+  top: 2px;
 }
 
 #section-top__quote-container--first-quotation {
@@ -76,13 +99,14 @@
 
 #section-top__main {
   background-image: url("images/10882@2x.png");
-  height: 375px;
+  min-height: 250px;
+  max-height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   font-size: 2em;
   line-height: 1.5em;
-  padding: 130px 0px 0px 50px;
+  padding: 60px 0px 0px 50px;
   border-radius: 20px;
 }
 
@@ -91,7 +115,6 @@
 }
 
 #section-top__main .section-top__main--app-btn {
-  margin-top: 1em;
   width: 150px;
   height: 40px;
   background-size: contain;
@@ -110,38 +133,87 @@
   background-color: #e41649;
 }
 
-#section-main__category-container--category-label {
-  padding-top: 20px;
+#section-main__header-container--our-meal-label {
+  padding-top: 10px;
   font-size: 1.2em;
   color: #B30733;
   font-weight: bold;
 }
 
-#section-main__category-container__search-container form {
-  background-color: #b7ceeb;
+#section-main__header-container__search-container {
+  display: inline;
 }
 
-#section-main__category-container__search-container--search-field {
+#section-main__header-container__search-container--search-bar {
+  background-color: #e1e9f3;
+}
+
+#section-main__header-container__search-container--search-field {
   margin: 11px 0px 9px 15px;
   border: 0;
+  width: 250px;
   background-color: transparent;
 }
 
-#section-main__category-container__search-container--search-btn {
+#section-main__header-container__search-container--search-btn {
   margin: 10px 15px 10px 10px;
   color: #B30733;
 }
 
-#section-main__category-container--search-settings {
+#section-main__header-container--search-settings {
   background-color: #EF4C00;
   margin-left: 10px;
   width: 40px;
   height: 40px;
+  border: 0;
 }
 
-#section-main__category-container--search-settings i {
+#section-main__header-container--search-settings i {
   font-size: 1.5em;
-  padding: 10px;
+  padding-left: 1px;
   color: white;
+}
+
+#section-main__categories--all-btn {
+  background-color: #EF4C00;
+  border: 0;
+  color: white;
+  padding: 6px 17px;
+  margin: 7px 7px 7px 0px;
+}
+
+.section-main__categoryies--nav-item {
+  background-color: #e1e9f3;
+  padding: 6px 17px;
+  margin: 7px;
+  display: inline;
+}
+
+.section-main__categoryies--nav-item img {
+  width: 20px;
+  fill: #2E4765;
+  margin-right: 4px;
+  color: #2E4765;
+}
+
+.section-main__categoryies--nav-item span {
+  position: relative;
+  top: 2px;
+}
+
+.meal-item {
+  border-radius: 10px;
+  margin: 10px;
+  width: 15rem;
+  color: #2E4765;
+}
+
+.meal-item img {
+  height: 150px;
+}
+
+.meal-item > div {
+  padding: 0;
+  border: 0;
 }
 /*# sourceMappingURL=style.css.map */
