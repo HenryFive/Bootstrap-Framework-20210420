@@ -1,8 +1,14 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
 $primary:#EF4C00;
 $secondary:#B30733;
 $tertiary:#2E4765;
 $tertiary-light:#e1e9f3;
 $light-gray:rgb(223, 223, 223);
+$border-radius: 10rem;
+
 
 * {
     font-family: Roboto;
@@ -11,7 +17,7 @@ $light-gray:rgb(223, 223, 223);
     //border:1px solid;
 }
 #container{
-    width: 70vw;
+    max-width: 60rem;
 }
 #header--brand{
     border-bottom: solid 1px $light-gray;
@@ -35,19 +41,10 @@ $light-gray:rgb(223, 223, 223);
         padding-top: 6px;
     }
     li .active{
-        padding-bottom: 14px;
+        padding-bottom: 13px;
         border-bottom: solid 6px $primary;
     }
-    li .active:before{
-        position: absolute;
-        bottom: 0px;
-        height: 2px;
-        content: '';
-        width:300px;
-        border:3px solid;
-        //@at-root:50%;
-        border-color: $primary;
-    }
+
     a{
         color: $tertiary;
     }
@@ -194,19 +191,65 @@ $light-gray:rgb(223, 223, 223);
     }
     
 }
-.meal-item{
-    border-radius: 10px;
-    margin: 10px;
-    width: 15rem;
-    color: $tertiary; !important
+.meal-item {
+    margin: 10px auto;
+    width: 17rem;
+    
+    &--img{
+        height: 120px;
+        width: inherit;
+
+        img {
+            height: 150px;
+        }
+    }
+    
+    h6{
+        color: $secondary;
+    }
+    &>div{
+        padding:0;
+        border:0;
+    }
+    &--footer{
+        width: inherit;
+        padding:8px;
+        margin-top: 3px;
+        span{
+            padding: 4px 5px 0 0;
+        }
+        a{
+            background-color: $light-gray;
+            padding: 6px 10px;
+            margin: 0 5px 0 0;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+        a:link {
+            text-decoration: none;
+            color:$tertiary;
+          }
+          
+          a:visited {
+            text-decoration: none;
+          }
+          
+          a:hover {
+            text-decoration: none;
+            color:$primary;
+          }
+          
+          a:active {
+            text-decoration: none;
+          }
+    }
 }
-.meal-item img{
-    height: 150px;
+#card-section__container{
+    display: flex;
+    flex-wrap: wrap;
 }
-.meal-item>div{
-    padding:0;
-    border:0;
-}
-.meal-item h5{
-    color: $tertiary;
+#footer {
+    background-color: #fff;
+    height: 50px;
+    width: inherit;
 }

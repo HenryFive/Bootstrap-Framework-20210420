@@ -5,7 +5,7 @@
 }
 
 #container {
-  width: 70vw;
+  max-width: 60rem;
 }
 
 #header--brand {
@@ -30,18 +30,8 @@
 }
 
 #header--nav li .active {
-  padding-bottom: 14px;
+  padding-bottom: 13px;
   border-bottom: solid 6px #EF4C00;
-}
-
-#header--nav li .active:before {
-  position: absolute;
-  bottom: 0px;
-  height: 2px;
-  content: '';
-  width: 300px;
-  border: 3px solid;
-  border-color: #EF4C00;
 }
 
 #header--nav a {
@@ -202,18 +192,75 @@
 }
 
 .meal-item {
-  border-radius: 10px;
-  margin: 10px;
-  width: 15rem;
-  color: #2E4765;
+  margin: 10px auto;
+  width: 17rem;
 }
 
-.meal-item img {
+.meal-item--img {
+  height: 120px;
+  width: inherit;
+}
+
+.meal-item--img img {
   height: 150px;
+}
+
+.meal-item h6 {
+  color: #B30733;
 }
 
 .meal-item > div {
   padding: 0;
   border: 0;
+}
+
+.meal-item--footer {
+  width: inherit;
+  padding: 8px;
+  margin-top: 3px;
+}
+
+.meal-item--footer span {
+  padding: 4px 5px 0 0;
+}
+
+.meal-item--footer a {
+  background-color: #dfdfdf;
+  padding: 6px 10px;
+  margin: 0 5px 0 0;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.meal-item--footer a:link {
+  text-decoration: none;
+  color: #2E4765;
+}
+
+.meal-item--footer a:visited {
+  text-decoration: none;
+}
+
+.meal-item--footer a:hover {
+  text-decoration: none;
+  color: #EF4C00;
+}
+
+.meal-item--footer a:active {
+  text-decoration: none;
+}
+
+#card-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer {
+  background-color: #fff;
+  height: 50px;
+  width: inherit;
 }
 /*# sourceMappingURL=style.css.map */
